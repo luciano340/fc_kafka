@@ -13,7 +13,8 @@ O Kafka é amplamente utilizado em arquiteturas de microsserviços, processament
  * Consumidores (Consumers): Consomem mensagens de tópicos. Os consumidores podem ser agrupados para dimensionamento e tolerância a falhas.
  * Broker Kafka: Cada nó no cluster Kafka é chamado de broker. Ele é responsável por armazenar dados e atender solicitações de produtores e consumidores.
  * Partições: Cada tópico é dividido em partições, permitindo a distribuição de dados e paralelismo no processamento.
-
+ * ZooKeeper: O Apache Kafka depende do Apache ZooKeeper para coordenação e gerenciamento de configuração no cluster.
+ 
 ## Kafka e resiliencia 
 O Apache Kafka é considerado resiliente por várias razões, principalmente devido à sua arquitetura distribuída e características de tolerância a falhas. Algumas das razões para a resiliência do Kafka incluem:
 
