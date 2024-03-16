@@ -41,3 +41,10 @@ O Kafka também oferece opções de indepotência, garantindo que mesmo em situa
  * A indepotência do produtor refere-se à capacidade de enviar mensagens de forma que, mesmo que ocorram falhas ou retransmissões, não haja efeitos colaterais indesejados, como duplicatas indesejadas.
 
  * O uso de IDs de mensagem exclusivos e o cuidado ao lidar com retransmissões são práticas comuns para garantir a indepotência. O Kafka fornece um identificador exclusivo para cada mensagem, e o produtor pode ser configurado para garantir a indepotência.
+
+## Tópicos padrões do Kafka
+ * __consumer_offsets: Este tópico armazena os offsets de leitura para os grupos de consumidores. Ele rastreia o progresso de cada consumidor em um grupo, indicando qual mensagem eles devem consumir a seguir.
+
+ * _confluent-command: É utilizado pela Confluent Control Center para a troca de comandos entre instâncias do Control Center e os brokers do Apache Kafka. Esse tópico é responsável por gerenciar e monitorar conectores Kafka Connect. 
+
+ * _confluent-metrics:  É utilizado para coletar métricas relacionadas ao desempenho e operação da Confluent Platform. Esse tópico faz parte dos tópicos internos da Confluent Platform e é criado automaticamente por padrão.
